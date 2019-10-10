@@ -1,0 +1,179 @@
+.container {
+	height: 600px;
+	width: 600px;
+	position: absolute;
+	left: 30%;
+	top: 10%;
+	overflow: hidden;
+}
+
+.images {
+	position:absolute;
+	height:600px;
+	width:600px;
+	margin:0 auto;
+}
+
+.title {
+	position: absolute;
+	z-index: 9;
+}
+
+.hoverbox {
+	top: 275px;
+	left: 63px;
+	z-index: 8;
+	width: 20px;
+	height: 100px;
+	border: dashed  0px;
+	box-sizing: border-box;
+	padding: 23px;
+	position: absolute;
+}
+
+.firstimage {
+	z-index: 7;
+	position: absolute;
+	height: 600px;
+	width: 600px;
+}
+
+.secimage {
+	z-index: 6;
+	position: absolute;
+	height: 600px;
+	width: 600px;
+}
+
+.thirdimage {
+	z-index: 5;
+	position: absolute;
+	height: 600px;
+	width: 600px;
+}
+
+.forthimage {
+	z-index: 4;
+	position: absolute;
+	height: 600px;
+	width: 600px;
+}
+
+.fifthimage {
+	z-index: 3;
+	position: absolute;
+	height: 600px;
+	width: 600px;
+}
+
+.sixthimage {
+	z-index: 2;
+	position: absolute;
+	height: 600px;
+	width: 600px;
+}
+
+.seventhimage {
+	z-index: 1;
+	position: absolute;
+	height: 600px;
+	width: 600px;
+}
+
+.hoverbox:hover ~ .firstimage {
+	height: 600px;
+	width: 600px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.hoverbox:hover ~ .secimage {
+	height: 600px;
+	width: 600px;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.hoverbox:hover ~ .thirdimage {
+	height: 600px;
+	width: 600px;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 1s;
+}
+
+.hoverbox:hover ~ .forthimage {
+	height: 600px;
+	width: 600px;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 1.5s;
+}
+
+.hoverbox:hover ~ .fifthimage {
+	height: 600px;
+	width: 600px;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 2s;
+}
+
+.hoverbox:hover ~ .sixthimage {
+	height: 600px;
+	width: 600px;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 2.5s;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url(../fonts/FontsFree-Net-Proxima-Nova-Bold.otf);
+}
+
+.title {
+	top: 40px;
+	left: 40px;
+	font-family: ProximaNova;
+	color: white;
+	animation: title 3s infinite linear;
+}
+
+.ANDTHEN {
+	font-size: 55px;
+	animation: andthen 3s infinite;
+}
+
+.THEREWERE {
+	font-size: 45px;
+	animation: therewere 3s infinite;
+}
+
+.NONE {
+	font-size: 99px;
+	animation: animationNone 3s infinite linear;
+}
+
+@keyframes animationNone {
+	0% {opacity: 1; font-size: 99px;}
+	25% {opacity: 0; font-size: 66px;}
+	50% {opacity: 0; font-size: 33px;}
+	75% {opacity: 0; font-size: 66px;}
+	100% {opacity: 1; font-size: 99px;}
+}
+
+@keyframes therewere {
+	0%, 100%  {top: 40px; color: white;}
+	50%   {top: 300px; color: red}
+}
+
+@keyframes andthen {
+	0%, 100% {transform: rotateZ(0deg);font-size: 55px;}
+	50% {transform: rotateZ(180deg); font-size: 10px;}
+}
+
+@keyframes title {
+	0%, 100% {left: 40px; top: 40px;}
+	50% {left: 100px; top: 100px;}
+}
